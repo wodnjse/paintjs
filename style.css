@@ -29,7 +29,7 @@ body {
 }
 
 .controls__btns button {
-    all: unset;
+    all: unset;  /* 브라우저마다 기본적으로 적용되어있는 default 스타일 초기화 */
     cursor: pointer;
     background-color: #fff;
     padding: 5px 0px;
@@ -39,7 +39,7 @@ body {
     box-shadow: 0 4px 6px #d9d9d9, 0 1px 3px #fff;  
     border: 2px solid rgba(0, 0, 0, 0.2);
     color: rgba(0, 0, 0, 0.8);
-    text-transform: uppercase;
+    text-transform: uppercase;  /* 텍스트 대문자로 변환 */
     font-weight: 800;
     font-size: 12px;
 }
