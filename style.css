@@ -10,8 +10,8 @@ body {
 }
 
 .canvas {
-    width: 700px;
-    height: 700px;
+    width: 45vw;  /* ë·°í¬?Š¸ ?„ˆë¹„ì— canvas ?‚¬?´ì¦? ë§ì¶¤ */
+    height: 45vw;  /* vwë¡? ì¤˜ì„œ ê°?ë¡œì„¸ë¡? 1:1 ë¹„ìœ¨ ë§ì¶¤ */
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #fff;
@@ -29,7 +29,7 @@ body {
 }
 
 .controls__btns button {
-    all: unset;  /* ë¸Œë¼ìš°ì €ë§ˆë‹¤ ê¸°ë³¸ì ìœ¼ë¡œ ì ìš©ë˜ì–´ìˆëŠ” default ìŠ¤íƒ€ì¼ ì´ˆê¸°í™” */
+    all: unset;  /* ë¸Œë¼?š°???ë§ˆë‹¤ ê¸°ë³¸? ?œ¼ë¡? ? ?š©?˜?–´?ˆ?Š” default ?Š¤????¼ ì´ˆê¸°?™”  */
     cursor: pointer;
     background-color: #fff;
     padding: 5px 0px;
@@ -39,16 +39,16 @@ body {
     box-shadow: 0 4px 6px #d9d9d9, 0 1px 3px #fff;  
     border: 2px solid rgba(0, 0, 0, 0.2);
     color: rgba(0, 0, 0, 0.8);
-    text-transform: uppercase;  /* í…ìŠ¤íŠ¸ ëŒ€ë¬¸ìë¡œ ë³€í™˜ */
+    text-transform: uppercase;  /* ?…?Š¤?Š¸ ???ë¬¸ìë¡? ë³??™˜ */
     font-weight: 800;
     font-size: 12px;
 }
 
 .controls__btns button:active {
-    transform: scale(0.98);  /* ë²„íŠ¼ í´ë¦­ ì‹œ ì‚´ì§ ì¤„ì–´ë“¦ */
+    transform: scale(0.98);  /* ë²„íŠ¼ ?´ë¦? ?‹œ ?‚´ì§? ì¤„ì–´?“¦ */
 }
 .controls .controls__colors {
-    display: flex;  /* ìƒ‰ìƒ ê°€ë¡œ ì •ë ¬ */
+    display: flex;  /* ?ƒ‰?ƒ ê°?ë¡? ? •? ¬ */
 }
 
 .controls__colors .controls__color {
