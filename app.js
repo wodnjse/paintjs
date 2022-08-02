@@ -1,7 +1,7 @@
 const canvas = document.getElementById("jsCanvas");
-const ctx = canvas.getContext("2d");
+const ctx = canvas.getContext("2d");  // canvas안에서의 픽셀을 다룰 수 있게 함
 
-ctx.strokeStyle = "##2c2c2c";
+ctx.strokeStyle = "#2c2c2c";
 ctx.lineWidth = 2.5;
 
 let painting = false;
@@ -17,6 +17,13 @@ function startPainting() {
 function onMouseMove(event) {  // 캔버스 안에서의 마우스 좌표
     const x = event.offsetX;
     const y = event.offsetY;
+    if (!painting) {
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+    } else {
+        ctx.lineTo(x, y);
+        ctx.stroke();
+    }
 }
 
 function onMouseDown(event) {  // 마우스를 클릭하면 칠하기 동작
